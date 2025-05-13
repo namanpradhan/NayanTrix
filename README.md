@@ -1,16 +1,22 @@
-# 🛡️ NayanTrix - Advanced Web-Based Virus Scanner
+# 🛡️ NayanTrix - AI-Powered Web Antivirus Scanner
 
-**NayanTrix** is a modern, dual-engine web antivirus solution that allows users to upload and scan files using both **ClamAV** (for local scanning) and **VirusTotal API** (for cloud-based scanning). Built using **Python**, **Flask**, and modern UI design, NayanTrix combines speed and reliability with detailed malware reporting.
+**NayanTrix** is a cutting-edge, AI-enhanced web-based virus scanner built using Python and Flask. It integrates ClamAV for fast local malware detection and VirusTotal API for multi-engine cloud scanning. What sets NayanTrix apart is its built-in NayanTrix AI, which provides clear, human-readable explanations of scan results — helping users understand potential threats and how to respond.
 
 ---
 
 ## 🚀 Features
 
-- 🔎 **Local Virus Scanning** with ClamAV
-- ☁️ **Cloud-Based Detection** using VirusTotal API
-- 📊 **Detailed Scan Reports** with timestamps and detection summaries
-- 🎨 **Modern UI** with background images and responsive layout
-- 🧹 **Auto-Cleans Up Uploaded Files** after scan
+⚡️ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
+
+🧠 NayanTrix AI: Explains scan results in simple, actionable language
+
+📄 Detailed malware reporting with detection breakdown
+
+🌐 Modern web interface built with Flask + responsive UI
+
+🛡️ Secure file handling and permission management
+
+🧪 Real-time system checks for scanning engines and AI readiness
 
 ---
 
