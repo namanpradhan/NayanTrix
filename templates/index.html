@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NayanTrix - Upload File</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat,
+                        linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .upload-container {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #00ffe1;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+            font-size: 14px;
+            padding: 6px;
+            width: 100%;
+            color: #eee;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #888;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #00ffe1;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            color: #1b1b1b;
+        }
+
+        button:hover {
+            background-color: #00c6b2;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="upload-container">
+        <h1>🛡️ NayanTrix </h1>
+        <p>Upload a file below to scan it for viruses using NayanTrix.</p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br>
+            <button type="submit">Scan File</button>
+        </form>
+
+        <div class="footer">
+            © 2025 NayanTrix | Protecting your files with intelligence.<br> Developed By Naman
+        </div>
+    </div>
+
+</body>
+</html>
