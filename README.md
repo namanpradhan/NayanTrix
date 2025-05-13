@@ -61,6 +61,14 @@ sudo apt install clamav clamav-daemon
 sudo freshclam
 sudo systemctl start clamav-daemon
 ```
+### If you Get Any error Follow these Steps: 
+```
+sudo systemctl stop clamav-freshclam
+sudo chown -R clamav:clamav /var/log/clamav
+sudo chmod -R 755 /var/log/clamav
+sudo freshclam
+sudo systemctl start clamav-freshclam
+```
 Ensure clamd is running. Check with:
 ```
 ps aux | grep clamd
@@ -77,4 +85,8 @@ Download and install ClamAV for Windows
 In app.py, replace the placeholder key:
 ```
 VIRUS_TOTAL_API_KEY = 'YOUR_API_KEY_HERE'
+```
+### 6.Run
+```
+Python app.py 
 ```
