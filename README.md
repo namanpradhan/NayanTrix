@@ -80,13 +80,18 @@ brew install clamav
 
 Windows:
 Download and install ClamAV for Windows
-### 5. Add Your VirusTotal API Key
+###AI Setup (e.g., for Ollama + LLaMA/Gemma Support)
+
+```chmod +x setup.sh
+./setup.sh
+```
+### 6. Add Your VirusTotal API Key
 
 In app.py, replace the placeholder key:
 ```
 VIRUS_TOTAL_API_KEY = 'YOUR_API_KEY_HERE'
 ```
-### 6.Run
+### 7.Run
 ```
 Python app.py 
 ```
