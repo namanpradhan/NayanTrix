@@ -84,7 +84,8 @@ Download and install ClamAV for Windows
 
 ### 5. AI Setup (e.g., for Ollama + LLaMA/Gemma Support)
 
-```chmod +x setup.sh
+```
+chmod +x setup.sh
 ./setup.sh
 ```
 ### 6. Add Your VirusTotal API Key
