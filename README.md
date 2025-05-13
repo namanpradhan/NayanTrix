@@ -88,7 +88,7 @@ Windows:
 Download and install ClamAV for Windows
 
 
-### 5. AI Setup (e.g., for Ollama + LLaMA/Gemma Support)
+### 5. AI Setup 
 
 ```
 chmod +x setup.sh
