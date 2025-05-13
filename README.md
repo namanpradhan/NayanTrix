@@ -6,17 +6,17 @@
 
 ## 🚀 Features
 
-⚡️ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
+-⚡ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
 
-🧠 NayanTrix AI: Explains scan results in simple, actionable language
+-🧠 NayanTrix AI: Explains scan results in simple, actionable language
 
-📄 Detailed malware reporting with detection breakdown
+-📄 Detailed malware reporting with detection breakdown
 
-🌐 Modern web interface built with Flask + responsive UI
+-🌐 Modern web interface built with Flask + responsive UI
 
-🛡️ Secure file handling and permission management
+-🛡️ Secure file handling and permission management
 
-🧪 Real-time system checks for scanning engines and AI readiness
+-🧪 Real-time system checks for scanning engines and AI readiness
 
 ---
 
