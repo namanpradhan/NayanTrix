@@ -1,40 +1,50 @@
 # 🛡️ NayanTrix - AI-Powered Web Antivirus Scanner
 
-**NayanTrix** is a cutting-edge, AI-enhanced web-based virus scanner built using Python and Flask. It integrates ClamAV for fast local malware detection and VirusTotal API for multi-engine cloud scanning. What sets NayanTrix apart is its built-in NayanTrix AI, which provides clear, human-readable explanations of scan results — helping users understand potential threats and how to respond.
+**NayanTrix** is an AI-enhanced, web-based virus scanner built with Python and Flask. It integrates ClamAV for fast local malware detection, the VirusTotal API for multi-engine cloud scanning, and YARA for advanced pattern matching and rule-based scanning. What sets NayanTrix apart is its built-in NayanTrix AI, which provides clear, human-readable explanations of scan results — helping users understand potential threats and how to respond.
 
 ---
 
 ## 🚀 Features
 
--⚡ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
+⚡ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
 
--🧠 NayanTrix AI: Explains scan results in simple, actionable language
+🔎 YARA scanning: Advanced pattern matching and rule-based detection
 
--📄 Detailed malware reporting with detection breakdown
+🧠 NayanTrix AI: Explains scan results in simple, actionable language
 
--🌐 Modern web interface built with Flask + responsive UI
+📄 Detailed malware reporting with detection breakdown
 
--🛡️ Secure file handling and permission management
+🌐 Modern web interface built with Flask + responsive UI
 
--🧪 Real-time system checks for scanning engines and AI readiness
+🛡️ Secure file handling and permission management
+
+🧪 Real-time system checks for scanning engines and AI readiness
 
 ---
 
 ## 🧱 Technologies Used
 
-- **Backend**: Python, Flask
-- **Scanning**: ClamAV via pyClamd, VirusTotal Public API
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Styling**: Custom CSS + modern design patterns
+Backend: Python, Flask
+
+Scanning: ClamAV via pyClamd, VirusTotal Public API, YARA
+
+Frontend: HTML5, CSS3, JavaScript
+
+Styling: Custom CSS + modern design patterns
 
 ---
 
 ## 🧰 Requirements
 
-- Python 3.6+
-- ClamAV installed and running (`clamd`)
-- A VirusTotal API Key (free-tier works)
-- Git
+Python 3.6+
+
+ClamAV installed and running (clamd)
+
+A VirusTotal API Key (free-tier works)
+
+YARA installed and configured
+
+Git
 
 ---
 
@@ -49,6 +59,7 @@ cd NayanTrix
 ```
 ### 2. Create a Virtual Environment
 ```
+sudo apt install python3 python3-pip
 python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
 # OR
