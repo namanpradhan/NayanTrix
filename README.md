@@ -1,36 +1,39 @@
-# 🛡️ NayanTrix - AI-Powered Web Antivirus Scanner
+# 🛡️ NayanTrix - Advanced Multi-Engine Malware Scanner
 
-**NayanTrix** is an AI-enhanced, web-based virus scanner built with Python and Flask. It integrates ClamAV for fast local malware detection, the VirusTotal API for multi-engine cloud scanning, and YARA for advanced pattern matching and rule-based scanning. What sets NayanTrix apart is its built-in NayanTrix AI, which provides clear, human-readable explanations of scan results — helping users understand potential threats and how to respond.
-
+**NayanTrix** is an AI-enhanced, web-based virus scanner built with Python and Flask. It integrates ClamAV for fast local malware detection, VirusTotal, MetaDefender, and Hybrid Analysis for multi-engine cloud scanning, and YARA for advanced pattern matching. What sets NayanTrix apart is its built-in NayanTrix AI, which provides human-readable explanations of scan results — helping users understand threats and take informed action.
 ---
 
 ## 🚀 Features
 
-⚡ Dual-engine scanning: Local (ClamAV) + Cloud (VirusTotal)
+⚡ Multi-engine scanning: Local (ClamAV) + Cloud APIs (VirusTotal, MetaDefender, Hybrid Analysis)
 
-🔎 YARA scanning: Advanced pattern matching and rule-based detection
+🔍 YARA scanning: Advanced pattern matching with custom rules
 
-🧠 NayanTrix AI: Explains scan results in simple, actionable language
+🧠 NayanTrix AI: Explains results using LLMs for easy understanding
 
-📄 Detailed malware reporting with detection breakdown
+📄 Comprehensive reports: Detection breakdown, scan metadata, and AI insights
 
-🌐 Modern web interface built with Flask + responsive UI
+🌐 Modern web interface: Flask-powered with responsive, sleek UI
 
-🛡️ Secure file handling and permission management
+🔐 Secure file handling: Temporary storage, permission controls, and system checks
 
-🧪 Real-time system checks for scanning engines and AI readiness
+🧪 Real-time status: Verifies scanning engines and AI availability
+
+
 
 ---
 
 ## 🧱 Technologies Used
 
-Backend: Python, Flask
+Backend: Python 3, Flask
 
-Scanning: ClamAV via pyClamd, VirusTotal Public API, YARA
+Scanning: ClamAV (via pyClamd), VirusTotal API, MetaDefender API, Hybrid Analysis API, YARA
 
 Frontend: HTML5, CSS3, JavaScript
 
-Styling: Custom CSS + modern design patterns
+AI: Ollama (Gemma 3B/1B or LLaMA 2 via local models)
+
+
 
 ---
 
@@ -38,13 +41,18 @@ Styling: Custom CSS + modern design patterns
 
 Python 3.6+
 
-ClamAV installed and running (clamd)
+ClamAV (clamd) installed and running
 
-A VirusTotal API Key (free-tier works)
+YARA installed
 
-YARA installed and configured
+VirusTotal API Key
+
+MetaDefender API Key
+
+Hybrid Analysis API credentials
 
 Git
+
 
 ---
 
@@ -110,6 +118,10 @@ chmod +x setup.sh
 In app.py, replace the placeholder key:
 ```
 VIRUS_TOTAL_API_KEY = 'YOUR_API_KEY_HERE'
+METADEFENDER_API_KEY = 'YOUR_API_KEY'
+HYBRID_ANALYSIS_API_KEY = 'YOUR_API_KEY'
+HYBRID_ANALYSIS_SECRET = 'YOUR_SECRET'
+
 ```
 ### 7.Run
 ```
