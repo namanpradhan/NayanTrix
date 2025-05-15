@@ -1,6 +1,6 @@
 # 🛡️ NayanTrix - Advanced Multi-Engine Malware Scanner
 
-**NayanTrix** is an AI-enhanced, web-based virus scanner built with Python and Flask. It integrates ClamAV for fast local malware detection, VirusTotal, MetaDefender, and Hybrid Analysis for multi-engine cloud scanning, and YARA for advanced pattern matching. What sets NayanTrix apart is its built-in NayanTrix AI, which provides human-readable explanations of scan results — helping users understand threats and take informed action.
+**NayanTrix** is an Ai-Powered , web-based virus scanner built with Python and Flask. It integrates ClamAV for fast local malware detection, VirusTotal, MetaDefender, and Hybrid Analysis for multi-engine cloud scanning, and YARA for advanced pattern matching. What sets NayanTrix apart is its built-in NayanTrix AI, which provides human-readable explanations of scan results — helping users understand threats and take informed action.
 
 ---
 
