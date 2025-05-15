@@ -126,5 +126,5 @@ HYBRID_ANALYSIS_SECRET = 'YOUR_SECRET'
 ```
 ### 7.Run
 ```
-Python app.py 
+python app.py 
 ```
